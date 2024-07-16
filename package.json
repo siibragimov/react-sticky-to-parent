@@ -1,0 +1,83 @@
+{
+  "name": "react-sticky-to-parent",
+  "public": true,
+  "author": "sayid.ibragimov",
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "lib",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "main": "./dist/react-sticky-to-parent.umd.cjs",
+  "module": "./dist/react-sticky-to-parent.js",
+  "types": "./dist/react-sticky-to-parent.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-sticky-to-parent.js",
+      "require": "./dist/react-sticky-to-parent.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "types": "tsc lib/main.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/react-sticky-to-parent.d.ts",
+    "rename-types": "node scripts/rename-module.js",
+    "npm:publish": "npm publish --provenance --access public",
+    "github:package": "node scripts/rewrite-package.js",
+    "github:publish": "npm publish --scope=@siibragimov --registry=https://npm.pkg.github.com/ --provenance --access public"
+  },
+  "dependencies": {
+    "@reactuses/core": "^5.0.17"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siibragimov/react-sticky-to-parent.git"
+  },
+  "homepage": "https://github.com/siibragimov/react-sticky-to-parent#readme",
+  "bugs": {
+    "url": "https://github.com/siibragimov/react-sticky-to-parent/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "sticky",
+    "sticky-smooth",
+    "sticky-to-parent",
+    "sticky-elements",
+    "sticky-sidebar",
+    "sticky-header",
+    "sticky-footer",
+    "sticky-scroll",
+    "sticky-navbar",
+    "sticky-navigation-bar",
+    "sticky-menu",
+    "parallax"
+  ]
+}
