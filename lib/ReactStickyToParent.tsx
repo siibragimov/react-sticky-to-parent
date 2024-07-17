@@ -1,16 +1,16 @@
-  import React, { useRef, CSSProperties } from 'react'
+  import { RefObject, ReactNode, useRef, CSSProperties } from 'react'
   import { useElementBounding, useElementSize, useWindowScroll, useWindowSize } from '@reactuses/core'
   import './ReactStickyToParent.css'
 
   interface Props {
-    parent: React.RefObject<HTMLElement>;
-    children: React.ReactNode;
+    parent: RefObject<HTMLElement>;
+    children: ReactNode;
   }
 
 function ReactStickyToParent ({ parent, children }: Props) {
 
   const sticky = useRef<HTMLDivElement>(null);
-  const parentRef: React.RefObject<HTMLElement> = parent;
+  const parentRef: RefObject<HTMLElement> = parent;
 
   const { y: scrollY } = useWindowScroll();
   const { height: windowHeight } = useWindowSize();

@@ -1,2 +1,2 @@
-import ReactStickyToParent from './ReactStickyToParent.tsx'
+import ReactStickyToParent from './ReactStickyToParent'
 export { ReactStickyToParent }

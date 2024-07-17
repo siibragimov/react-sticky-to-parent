@@ -24,10 +24,11 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run types && npm run rename-types",
+    "postbuild": "rimraf dist/vite.svg",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "types": "tsc lib/main.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/react-sticky-to-parent.d.ts",
+    "types": "tsc lib/main.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --jsx react-jsx --rootDir . --outFile dist/react-sticky-to-parent.d.ts",
     "rename-types": "node scripts/rename-module.js",
     "npm:publish": "npm publish --provenance --access public",
     "github:package": "node scripts/rewrite-package.js",
