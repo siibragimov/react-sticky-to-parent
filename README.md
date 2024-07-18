@@ -2,6 +2,11 @@
 
 Makes block sticky to it's parent block. To see how it works, please, see the demo.
 
+[![npm version](https://badge.fury.io/js/react-sticky-to-parent.svg)](https://badge.fury.io/js/react-sticky-to-parent)
+[![Github Package](https://github.com/siibragimov/react-sticky-to-parent/actions/workflows/npm-publish-github-packages.yml/badge.svg?event=release)](https://github.com/siibragimov/react-sticky-to-parent/actions/workflows/npm-publish-github-packages.yml)
+[![Node.js Package](https://github.com/siibragimov/react-sticky-to-parent/actions/workflows/npm-publish.yml/badge.svg?event=release)](https://github.com/siibragimov/react-sticky-to-parent/actions/workflows/npm-publish.yml)
+[![Bundle size](https://badgen.net/bundlephobia/minzip/react-sticky-to-parent)](https://bundlephobia.com/package/react-sticky-to-parent)
+
 <img src="https://raw.github.com/siibragimov/react-sticky-to-parent/main/static/bundle-size.png" title="Bundle size" width="450">
 
 ![Demo](https://raw.github.com/siibragimov/react-sticky-to-parent/main/static/demo.webp)
