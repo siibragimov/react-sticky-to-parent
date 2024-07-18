@@ -2,7 +2,7 @@
 
 Makes block sticky to it's parent block. To see how it works, please, see the demo.
 
-![Bundle size](https://raw.github.com/siibragimov/react-sticky-to-parent/main/static/bundle-size.png)
+<img src="https://raw.github.com/siibragimov/react-sticky-to-parent/main/static/bundle-size.png" title="Bundle size" width="450">
 
 ![Demo](https://raw.github.com/siibragimov/react-sticky-to-parent/main/static/demo.webp)
 
